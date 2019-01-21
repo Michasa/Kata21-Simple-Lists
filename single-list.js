@@ -52,7 +52,7 @@ class SingleList {
     if (this.list.length !== 0) {
       let lastItemIndex = this.list.length - 1
       this.list[lastItemIndex].nextItem = null
-      console.log(`Last item removed. List pointers altered`)
+      console.log(`Last item removed. List pointers altered and now looks like this:`)
       this.listItems()
     }
   }
@@ -60,7 +60,7 @@ class SingleList {
   listItems() {
     console.log(`LISTING ITEMS....`)
     console.log(this.list)
-
+    console.log(`This list has ${this.list.length} items in it.`)
   }
 }
 
@@ -69,7 +69,12 @@ class SingleList {
 // mySingleList.addItem('Hello')
 // mySingleList.addItem('Goodbye')
 // mySingleList.addItem('Wow')
-// mySingleList.addItem('Cheese is nice')
-// mySingleList.addItem('You don\'t say Sherlock')
+// mySingleList.addItem('Cheese')
+// mySingleList.addItem('Sherlock')
+// mySingleList.addItem('Jojo')
 // mySingleList.findFirstItem('Hello')
 // mySingleList.findFirstItem('RandoIto')
+// mySingleList.listItems()
+// mySingleList.removeLastItem()
+// mySingleList.removeLastItem()
+// mySingleList.removeLastItem()
